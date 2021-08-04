@@ -6,4 +6,7 @@ public class UtilityClass {
         throw new AssertionError();
     }
     //...
+    public static UtilityClass returnUtilityClass(){
+        return new UtilityClass();
+    }
 }
