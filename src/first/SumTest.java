@@ -22,11 +22,11 @@ public class SumTest {
         long beforeTime = System.currentTimeMillis();
         System.out.println(SumTest.refererSum());
         long afterTime = System.currentTimeMillis();
-        System.out.println("refererSum 시간(ms) : " + (afterTime-beforeTime)/60);
+        System.out.println("refererSum 시간(s) : " + (afterTime-beforeTime)/1000 + "초");
 
         beforeTime = System.currentTimeMillis();
         System.out.println(SumTest.primiSum());
         afterTime = System.currentTimeMillis();
-        System.out.println("refererSum 시간(ms) : " + (afterTime-beforeTime)/60);
+        System.out.println("refererSum 시간(s) : " + (float)(afterTime-beforeTime)/1000 + "초");
     }
 }
