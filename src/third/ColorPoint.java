@@ -1,11 +1,21 @@
 package third;
 
-public class ColorPoint extends Point{
+import java.util.Objects;
+
+public class ColorPoint{
+
+    private final Point point;
     private final Color color;
 
     public ColorPoint(int x, int y, Color color){
-        super(x,y);
-        this.color = color;
+        point = new Point(x, y);
+        this.color = Objects.requireNonNull(color);
+    }
+    /*
+    이 ColorPoint의 Point 뷰를 반환한다.
+     */
+    public Point asPoint(){
+        return point;
     }
 
     @Override
