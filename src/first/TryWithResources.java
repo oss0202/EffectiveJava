@@ -31,6 +31,8 @@ public class TryWithResources {
             int n;
             while(( n = in.read(buf)) >= 0)
                 out.write(buf, 0, n);
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
 }
