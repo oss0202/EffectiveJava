@@ -7,4 +7,11 @@ public class People {
     public String getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "People{" +
+                "id='" + id + '\'' +
+                '}';
+    }
 }

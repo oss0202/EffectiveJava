@@ -9,4 +9,11 @@ public class Teacher {
     public People getPeople() {
         return people;
     }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "people=" + people +
+                '}';
+    }
 }
