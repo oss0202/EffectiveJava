@@ -1,7 +1,5 @@
 package third;
 
-import com.sun.xml.internal.ws.policy.spi.AssertionCreationException;
-
 public class PhoneNumber {
     int areaCode;
     int prefix;
